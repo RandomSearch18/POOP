@@ -1,3 +1,6 @@
+import random
+
+
 class PetAnimal:
     name: str
     species: str
@@ -9,6 +12,7 @@ class PetAnimal:
         self.name = name
         self.species = species
         self.color = color
+        self.intelligence = random.normalvariate(0.5, 0.2)
         self.hunger = 0
         self.boredness = 0
 
